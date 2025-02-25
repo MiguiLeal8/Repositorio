@@ -67,3 +67,13 @@ git branch
 git pull origin main 
 history | tail -n 200 | awk '{print $2}'> historia.txt 
 history | tail -n 200 | awk '{for(i=2;i<=NF;i++) printf "%s ", $i; print ""}'> historia.txt 
+git log > log.txt 
+git add . 
+git commit -m "Últimos cambios" 
+git push origin main 
+git branch Entrega-final 
+git switch Entrega-final 
+git push origin Entrega-final 
+history | tail -n 200 | awk '{for(i=2;i<=NF;i++) printf "%s ", $i; print ""}'> historia.txt 
+git log > log.txt 
+history | tail -n 200 | awk '{for(i=2;i<=NF;i++) printf "%s ", $i; print ""}'> historia.txt 
