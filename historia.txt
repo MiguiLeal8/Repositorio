@@ -1,3 +1,124 @@
+touch historia.txt 
+touch log.txt 
+ls 
+ls . 
+ls .. 
+mv ../DP_ControldeCambios_Grupo1.pdf Procesos/ControlDeCambios/ 
+mv ../Plantillas Procesos/ControlDeCambios/ 
+git branch 
+git status 
+git tag Rev1 
+git tag "Rev1" 
+git add 
+git add . 
+git tag Rev1 
+git tag "Rev1" 
+git commit -m "Creación del repositorio y adición de los ficheros iniciales" 
+git tag Rev1 
+git branch Mejoras 
+git switch Mejoras 
+git branch 
+mv ../DP_ControldeCambios_Grupo1.pdf Procesos/ControlDeCambios/ 
+mv ../Plantillas Procesos/ControlDeCambios/ 
+mv ../Plantillas/* Procesos/ControlDeCambios/Plantillas 
+rm -rf Procesos/ControlDeCambios/Plantillas 
+mv ../Plantillas Procesos/ControlDeCambios/ 
+git commit -m "Modificación del documento de Control de Cambio y de sus plantillas" 
+git add . 
+git commit -m "Modificación del documento de Control de Cambio y de sus plantillas" 
+git switch main 
+git reset --soft HEAD~1 
+git commit -m "Modificación del documento de Control de Cambio y de sus plantillas" 
+git reset --soft HEAD~1 
+git add . 
+git commit -m "Modificación del documento de Control de Cambio y de sus plantillas" 
+git switch main 
+git switch Mejoras 
+git switch main 
+git add . 
+git commit -m "Pequeño cambio en el documento del proceso de control de cambio" 
+git reset --soft HEAD~1 
+git add . 
+git commit -m "Pequeño cambio en el documento del proceso de control de cambio" 
+git switch Mejoras 
+git rebase main 
+git add . 
+git rebase main 
+git commit -m "Se añade el último commit a log.txt" 
+git rebase main 
+git add . 
+git rebase --continue 
+git add . 
+git commit -m "Rebase del main en Mejoras" 
+git switch main 
+ls 
+rm./* 
+rm ./* 
+rm -rf ./* 
+ls 
+ls -a 
+rm -rf .git 
+ls -a 
+git init 
+git branch -m main 
+rm -rf .git 
+git init 
+git branch -m main 
+mkdir Proyectos 
+mkdir Proyectos/Prj1 
+mkdir Procesos 
+mkdir Procesos/ControlDeCambios 
+touch historia.txt 
+touch log.txt 
+history 
+log 
+logs 
+mv ../DP_ControldeCambios_Grupo1.pdf Procesos/ControlDeCambios/ 
+mv ../Plantillas Procesos/ControlDeCambios/ 
+git commit -m "Creación del repositorio y adición de los ficheros iniciales" 
+git add . 
+git commit -m "Creación del repositorio y adición de los ficheros iniciales" 
+history 
+git branch Mejoras 
+git switch Mejoras 
+git status 
+mv ../PropuestasDeMejora.pdf Procesos/ControlDeCambios/ 
+mv ../DP_ControldeCambios_Grupo1.pdf Procesos/ControlDeCambios/ 
+rm -rf Procesos/ControlDeCambios/Plantillas 
+mv ../Plantillas Procesos/ControlDeCambios/ 
+rm -rf .git 
+ls -a 
+git init 
+git branch -m main 
+mkdir Proyectos 
+mkdir Proyectos/Prj1 
+mkdir Procesos 
+mkdir Procesos/ControlDeCambios 
+mv ../DP_ControldeCambios_Grupo1.pdf Procesos/ControlDeCambios/ 
+mv ../Plantillas Procesos/ControlDeCambios/ 
+touch historia.txt 
+touch log.txt 
+git tag Rev1 
+git add . 
+git commit -m "Creación del repositorio y adición de los ficheros iniciales" 
+git tag Rev1 
+git branch Mejoras 
+mv ../PropuestasDeMejora.pdf Procesos/ControlDeCambios/ 
+mv ../DP_ControldeCambios_Grupo1.pdf Procesos/ControlDeCambios/ 
+rm -rf Procesos/ControlDeCambios/Plantillas 
+mv ../Plantillas Procesos/ControlDeCambios/ 
+git add . 
+git commit -m "Modificación de los ficheros en ControlDeCambio" 
+git log > log.txt 
+git switch main 
+git branch 
+ls 
+rm .git 
+ls -a 
+rm -rf .git 
+git init 
+git branch main 
+rm -rf .git 
 git init 
 git branch -m main 
 mkdir Proyectos 
@@ -66,4 +187,14 @@ git push origin Rev3
 git branch 
 git pull origin main 
 history | tail -n 200 | awk '{print $2}'> historia.txt 
+history | tail -n 200 | awk '{for(i=2;i<=NF;i++) printf "%s ", $i; print ""}'> historia.txt 
+git log > log.txt 
+git add . 
+git commit -m "Últimos cambios" 
+git push origin main 
+git branch Entrega-final 
+git switch Entrega-final 
+git push origin Entrega-final 
+history | tail -n 200 | awk '{for(i=2;i<=NF;i++) printf "%s ", $i; print ""}'> historia.txt 
+git log > log.txt 
 history | tail -n 200 | awk '{for(i=2;i<=NF;i++) printf "%s ", $i; print ""}'> historia.txt 
