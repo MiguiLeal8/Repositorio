@@ -1,0 +1,69 @@
+git init 
+git branch -m main 
+mkdir Proyectos 
+mkdir Proyectos/Prj1 
+mkdir Procesos 
+mkdir Procesos/ControlDeCambios 
+mv ../DP_ControldeCambios_Grupo1.pdf Procesos/ControlDeCambios/ 
+mv ../Plantillas Procesos/ControlDeCambios/ 
+touch historia.txt 
+touch log.txt 
+git tag Rev1 
+git add . 
+git tag Rev1 
+git commit -m "Creación del repositorio y adición de los ficheros iniciales" 
+git tag Rev1 
+git branch Mejoras 
+git switch Mejoras 
+mv ../PropuestasDeMejora.pdf Procesos/ControlDeCambios/ 
+mv ../DP_ControldeCambios_Grupo1.pdf Procesos/ControlDeCambios/ 
+rm -rf Procesos/ControlDeCambios/Plantillas 
+mv ../Plantillas Procesos/ControlDeCambios/ 
+git add . 
+git commit -m "Modificación de los ficheros de ControlDeCambios" 
+git log > log.txt 
+git switch main 
+git switch Mejoras 
+git add . 
+git switch Mejoras 
+git commit -m "Pequeño cambio en el documento de control de cambios" 
+git switch Mejoras 
+git rebase main 
+git add . 
+git rebase --continue 
+git branch 
+git log > log.txt 
+git switch main 
+git merge Mejoras 
+git branch -d Mejoras 
+git log > log.txt 
+rm Procesos/ControlDeCambios/PropuestasDeMejora.pdf 
+git tag Rev2 
+mv ../DP_ControldeCambios_Grupo1-v3.pdf Procesos/ControlDeCambios/ 
+rm Procesos/ControlDeCambios/DP_ControldeCambios_Grupo1-v3.pdf 
+mv ../DP_ControldeCambios_Grupo1.pdf Procesos/ControlDeCambios/ 
+git add . 
+git commit -m "Modificación del documento de control de cambios" 
+git revert --soft HEAD 
+git revert HEAD 
+mv ../DP_ControldeCambios_Grupo1.pdf Procesos/ControlDeCambios/ 
+rm -rf Procesos/ControlDeCambios/Plantillas 
+mv ../Plantillas Procesos/ControlDeCambios/ 
+rm Procesos/ControlDeCambios/PropuestasDeMejora.pdf 
+git add . 
+git commit -m "Se vuelve a cambiar el documento de control de cambios, pero esta vez también se modifican las plantillas" 
+git tag Rev3 
+git push main 
+git push origin main 
+git branch 
+git push main 
+git login 
+git remote add origin https://github.com/MiguiLeal8/Repositorio 
+git push origin main 
+git push origin Rev1 
+git push origin Rev2 
+git push origin Rev3 
+git branch 
+git pull origin main 
+history | tail -n 200 | awk '{print $2}'> historia.txt 
+history | tail -n 200 | awk '{for(i=2;i<=NF;i++) printf "%s ", $i; print ""}'> historia.txt 
