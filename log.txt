@@ -1,0 +1,11 @@
+commit 37e9e2e62f2bbb6c0c1c22eba24e352b639eaf1d
+Author: Miguel Leal Fernández <miguileal8@gmail.com>
+Date:   Tue Feb 25 18:01:13 2025 +0100
+
+    Modificación de los ficheros de ControlDeCambios
+
+commit efa240f2c6eb1c81540b66bfb88c392bb1133a13
+Author: Miguel Leal Fernández <miguileal8@gmail.com>
+Date:   Tue Feb 25 17:58:10 2025 +0100
+
+    Creación del repositorio y adición de los ficheros iniciales
