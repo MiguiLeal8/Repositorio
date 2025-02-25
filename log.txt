@@ -1,8 +1,14 @@
-commit 37e9e2e62f2bbb6c0c1c22eba24e352b639eaf1d
+commit f8cccc02656055f90f1a3d10acd440850c9523d0
 Author: Miguel Leal Fernández <miguileal8@gmail.com>
 Date:   Tue Feb 25 18:01:13 2025 +0100
 
     Modificación de los ficheros de ControlDeCambios
+
+commit 19456e86be982df8ad750a6a50b6d25f935ed10d
+Author: Miguel Leal Fernández <miguileal8@gmail.com>
+Date:   Tue Feb 25 18:03:35 2025 +0100
+
+    Pequeño cambio en el documento de control de cambios
 
 commit efa240f2c6eb1c81540b66bfb88c392bb1133a13
 Author: Miguel Leal Fernández <miguileal8@gmail.com>
